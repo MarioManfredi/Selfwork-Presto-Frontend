@@ -1,0 +1,145 @@
+
+/* Fonts */
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h2, h3, h4{
+    font-family: "DM Sans", sans-serif;
+}
+
+/* Variables */
+:root{
+    --bgOne: #343A90;
+    --bgSecond: #F17119;
+    --colorA: rgb(255, 255, 255);
+    --colorB: rgb(0, 0, 0); 
+}
+
+body{
+    color: var(--colorA);
+}
+
+.bgOne{
+    background-color: var(--bgOne);
+}
+
+.bgSecond{
+    background-color: var(--bgSecond);
+}
+
+.colorA{
+    color: var(--colorA);
+}
+
+.colorB{
+    color: var(--colorB);
+}
+
+/* Navbar */
+.img-custom{
+    width: 40px;
+}
+
+.nav-link{
+    font-weight: bold;
+    color: var(--colorB);
+}
+
+.nav-link:hover{
+    text-shadow: 0px 0px 5px var(--colorA);
+}
+
+.navbar{
+    transition: 0.3s;
+    height: 60px;
+}
+
+.navbar-toggler{
+    background-color: var(--colorA);
+}
+
+.navbar-nav{
+    background-color: var(--bgOne);
+}
+
+/* Header */
+.bg-image{
+    background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20240522/pngtree-abstract-blue-orange-background-with-smooth-gradient-image_15683688.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.h1{
+    font-weight: 600;
+    font-size: 70px;
+}
+
+.btn-custom{
+    border: 3px dashed var(--bgOne);
+    border-radius: 20px;
+    padding: 10px 15px;
+    color: var(--bgOne);
+    transition: 0.5s;
+    background-color: transparent;
+}
+
+.btn-custom:hover{
+    color: var(--colorB);
+    transform: scale(1.4);
+    font-weight: bolder;
+    border: none;
+}
+
+/* Cards */
+.card-custom{
+    height: 400px;
+    width: 300px;
+    border: 3px solid var(--colorA);
+    border-radius: 20px;
+    background-color: var(--bgOne);
+    cursor: pointer;
+    transition: 0.5s;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.position{
+    position: relative;
+    top: -80px;
+}
+
+.p-custom{
+    text-align: center;
+    padding: 10px;
+}
+
+.card-custom:hover{
+    transform: scale(1.2);
+    border: 1px solid var(--colorB);
+    color: var(--colorB);
+    background-color: var(--bgSecond);
+}
+
+
+@media screen and (max-width: 600px) {
+    .position{
+        position: static;
+    }
+
+    .nav-link{
+        margin-left: 5px;
+    }
+    
+}
+
+/* Numbers */
+.h2{
+    font-weight: 600;
+    font-size: 40px;
+}
+
+.mg-custom{
+    margin-top: 80px;
+}
