@@ -143,3 +143,68 @@ body{
 .mg-custom{
     margin-top: 80px;
 }
+
+
+/* Annunci.html */
+.m-custom{
+    margin-top: 30px;
+}
+
+.b-custom{
+    border-bottom: 2px solid var(--colorA);
+}
+
+.accordion-button:not(.collapsed){
+    color: var(--colorB);
+    background-color: var(--bgSecond);
+    transition: 0.6s;
+}
+
+.bodyCard-custom{
+    width: 30%;
+    border: 2px solid var(--colorB);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: var(--colorA);
+    color: var(--colorB);
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+.img-fluid{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    .bodyCard-custom{
+        width: 90%;
+    }
+    
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+    .bodyCard-custom{
+        width: 40%;
+    }
+    
+}
+
+.form-check-input{
+  border: 1px solid var(--bgSecond);
+}
+
+.form-check-input:checked{
+  background-color: var(--bgSecond);
+  box-shadow: none;
+  border-color: var(--bgSecond);
+}
+
+.form-check-input:focus{
+    border-color: var(--bgSecond);
+    box-shadow: none;
+}
+
