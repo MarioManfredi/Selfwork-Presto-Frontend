@@ -74,14 +74,13 @@ let confirmD = true;
 function createIntervalC(n, time){
 
     numberOne.innerHTML = n;
+    
     let Interval= setInterval( ()=>{
         if(n > 0){
             n--;
             numberOne.innerHTML = n;
         }else{
-            review.innerHTML = 'Grazie di aver aspettato!';
-            review.style.fontSize = '70px';
-            numberOne.innerHTML = '';
+            
             clearInterval(interval);
         }
     }, time);
