@@ -3,7 +3,7 @@ let peoples = [
     {name: 'Mario', description: 'Docente 1° anno', url: "https://picsum.photos/300"},
     {name: 'Matteo', description: 'Docente 2° anno', url: "https://picsum.photos/301"},
     {name: 'Giada', description: 'Docente 3° anno', url: "https://picsum.photos/302"},
-    {name: 'Selene', description: 'Docente ultimo anno', url: "https://picsum.photos/303"}
+    {name: 'Selene', description: 'Docente ultimo anno con una descrizione molto lunga sul tipo di insegnamento e su cosa insegna agli studenti', url: "https://picsum.photos/303"}
 ] // immagini di prova casuali
 
 let slidewrapper = document.querySelector('#slidewrapper');
@@ -15,7 +15,7 @@ peoples.forEach( (people)=>{
         <img src="${people.url}" class="img-fluid" alt="Docente">
         <div class="mostra">
             <h2 class="textShow my-2 h2">${people.name}</h2>
-            <p class="lead my-3 textShow">${people.description}</p>
+            <p class="lead my-3 px-2">${people.description}</p>
         </div>
     `;
     slidewrapper.appendChild(div);

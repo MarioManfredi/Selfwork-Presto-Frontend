@@ -75,7 +75,7 @@ function createIntervalC(n, time){
 
     numberOne.innerHTML = n;
     
-    let Interval= setInterval( ()=>{
+    let interval= setInterval( ()=>{
         if(n > 0){
             n--;
             numberOne.innerHTML = n;
@@ -94,7 +94,7 @@ function createIntervalC(n, time){
 function createIntervalD(n, time){
 
     let c = 0;
-    let Interval= setInterval( ()=>{
+    let interval= setInterval( ()=>{
         if(c < n){
             c++;
             numberSecond.innerHTML = c;

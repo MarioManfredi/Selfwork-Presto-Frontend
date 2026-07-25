@@ -193,6 +193,13 @@ body{
     
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .bodyCard-custom{
+        width: 300px;
+    }
+    
+}
+
 .form-check-input{
   border: 1px solid var(--bgSecond);
 }
@@ -257,8 +264,24 @@ html{
 
 .mostra{
     display: none;
+    width: 100%;
+    color: var(--colorA);
 }
+
 .mostra.active {
     display: block;
+}
+
+.shows.open .mostra{
+    min-height: 100%;
+    overflow-y: auto;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    
+    .mySwiper{
+        width: 150%;
+        overflow-x: hidden;
+    }
 }
 
